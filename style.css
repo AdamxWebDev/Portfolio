@@ -1,0 +1,192 @@
+/* Document Defaults */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: .1rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 { 
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h4 { 
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h5 { 
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h6 { 
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+}
+
+/* Header and Navigation */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+nav li {
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 40px 5% 0 0;
+    font-family: 'Luxurious Roman', Helvetica, sans-serif;
+   
+}
+nav ul {
+    justify-content: end;
+    display: flex;
+    width: 100%;
+    flex-shrink: 2;
+
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul {
+        justify-content: start;
+    }
+    
+    nav li {
+        margin: 40px 5%;
+    }
+}
+
+/* Animated Banner */
+
+#animated-banner {
+    display: flex;
+    justify-content: center;
+}
+
+#animated-banner h1{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    font-family: 'Luxurious Roman', Helvetica, sans-serif;
+    margin: 25% 0;
+}
+
+.focus-in-contract-bck {
+	animation: focus-in-contract-bck 2s 
+               cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(300px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(16px);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+/* About Me Section */
+
+#about-me {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 2fr 3fr;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'EB Garamond', serif;
+}
+
+#about-me img {
+    border-radius: 50%;
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: end;
+}
+
+#about-me-text h1 {
+    font-size: 3rem;
+}
+
+#about-me p {
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+/* About Me Animation */
+
+.slide-in-fwd-left {
+    opacity: 0;
+}
+
+.slide-in-fwd-left.animate {
+    opacity: 1;
+	animation: slide-in-fwd-left 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-fwd-left {
+    0% {
+      transform: translateZ(-1400px) translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+  }
+
