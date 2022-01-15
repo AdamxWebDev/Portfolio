@@ -190,3 +190,39 @@ nav ul {
     }
   }
 
+/* Projects */
+
+#projects-header {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 3rem;
+    font-family: 'EB Garamond', serif;
+}
+
+#projects {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 1rem;
+    margin: 10% 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#project-SS-1 {
+    height: 25rem;
+    grid-area: 1 / 1 / 2 / 1;
+    justify-self: end;
+}
+
+#p-1-link {
+    grid-area: 1 / 2 / 1 / 2;
+    position: relative;
+    top: 25%;
+}
+
+#p-2-link {
+    grid-area: 1 / 2 / 1 / 2;
+    position: relative;
+    top: 50%;
+}
