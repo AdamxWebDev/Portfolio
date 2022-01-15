@@ -107,7 +107,10 @@ nav ul {
 @media only screen and (max-width: 480px) {
     
     nav ul {
-        justify-self: center;
+        justify-content: end;
+        display: flex;
+        width: 100%;
+        margin: 0 0 0 20%;    
     }
     
     nav li {
