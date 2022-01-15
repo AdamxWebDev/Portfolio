@@ -8,6 +8,7 @@ html {
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: .1rem;
+    width: 100%
 }
 
 body {
@@ -98,6 +99,7 @@ nav ul {
 }
 
 @media only screen and (max-width: 480px) {
+    
     nav ul {
         justify-content: start;
     }
@@ -147,7 +149,7 @@ nav ul {
 #about-me {
     width: 100%;
     display: grid;
-    grid-template: 1fr / 2fr 3fr;
+    grid-template: 1fr / 2fr 1.5fr 1.5fr;
     align-items: center;
     gap: 1rem;
     font-family: 'EB Garamond', serif;
@@ -164,11 +166,22 @@ nav ul {
 }
 
 #about-me p {
-    width: 60%;
     font-size: 1.5rem;
 }
 
-/* About Me Animation */
+@media only screen and (max-width: 480px) {
+    #about-me {
+        grid-template: 1fr 1fr / 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #about-me img {
+        justify-self: center;
+    }
+}
+
+/* Image Animation */
 
 .slide-in-fwd-left {
     opacity: 0;
@@ -176,7 +189,7 @@ nav ul {
 
 .slide-in-fwd-left.animate {
     opacity: 1;
-	animation: slide-in-fwd-left 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-fwd-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes slide-in-fwd-left {
@@ -201,7 +214,7 @@ nav ul {
 
 #projects {
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr / 2.5fr 0.5fr 2fr;
     gap: 1rem;
     margin: 10% 0;
     font-family: 'EB Garamond', serif;
@@ -225,4 +238,39 @@ nav ul {
     grid-area: 1 / 2 / 1 / 2;
     position: relative;
     top: 50%;
+}
+
+#h-1 {
+    grid-area: 1 / 3 / 1 / 3;
+    margin: 0 3rem 0 0;
+
+}
+
+@media only screen and (max-width: 480px){
+    #projects {
+        grid-template: 1fr 0.5fr 1fr / 1fr;
+    }
+
+    #project-SS-1 {
+        grid-area: 1 / 1 / 1 / 1;
+        justify-self: center;
+    }
+
+    #p-1-link {
+        grid-area: 2 / 1 / 2 / 1;
+        position: relative;
+        left: 25%;
+        top: 0px;
+    }
+    
+    #p-2-link {
+        grid-area: 2 / 1 / 2 / 1;
+        position: relative;
+        left: 50%;
+        top: 0px;
+    }
+
+    #h-1 {
+        grid-area: 3 / 1 / 3 / 1;
+    }
 }
