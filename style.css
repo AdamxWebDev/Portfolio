@@ -153,17 +153,18 @@ nav li {
 .focus-in-contract-bck {
 	animation: focus-in-contract-bck 2s 
                cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    font-size: 3rem;
 }
 
  @keyframes focus-in-contract-bck {
     0% {
       letter-spacing: 1em;
-      transform: translateZ(300px);
-      filter: blur(12px);
+      transform: translateZ(18.75rem);
+      filter: blur(0.75rem);
       opacity: 0;
     }
     100% {
-      transform: translateZ(16px);
+      transform: translateZ(1rem);
       filter: blur(0);
       opacity: 1;
     }
@@ -204,6 +205,8 @@ nav li {
 
     #about-me img {
         justify-self: center;
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -220,7 +223,7 @@ nav li {
 
 @keyframes slide-in-fwd-left {
     0% {
-      transform: translateZ(-1400px) translateX(-1000px);
+      transform: translateZ(-87.5rem) translateX(-62.5rem);
       opacity: 0;
     }
     100% {
