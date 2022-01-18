@@ -99,20 +99,24 @@ nav ul {
     justify-content: space-around;
     display: flex;
     width: 100%;
-    flex-shrink: 2;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
 
 nav {
     width: 100%;
-    float: right;
+    float: left;
+}
+
+nav ul {
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
 nav li {
     font-weight: 800;
-    font-size: 1.8rem;
-    margin: 40px 5% 0;
+    font-size: 1.5rem;
+    margin: 40px 5% 0 0;
     font-family: 'Luxurious Roman', Helvetica, sans-serif;
    
 }
@@ -152,7 +156,6 @@ nav li {
 .focus-in-contract-bck {
 	animation: focus-in-contract-bck 2s 
                cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    font-size: 3rem;
 }
 
  @keyframes focus-in-contract-bck {
@@ -169,6 +172,11 @@ nav li {
     }
   }
   
+@media only screen and (max-width: 780px) {
+    #animated-banner h1 {
+        font-size: 3rem;
+    }
+}
 
 /* About Me Section */
 
@@ -195,7 +203,7 @@ nav li {
     font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
     #about-me {
         grid-template: 1fr 1fr / 1fr;
         justify-content: center;
@@ -280,7 +288,7 @@ nav li {
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 780px){
     #project1 {
         grid-template: 1fr 0.25fr 1fr / 1fr;
     }
