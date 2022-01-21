@@ -72,7 +72,7 @@ h6 {
 }
 
 a {
-    color: white;
+    color: lightblue;
 }
 
 /* Header and Navigation */
@@ -93,12 +93,15 @@ nav li {
     font-size: 2rem;
     font-family: 'Luxurious Roman', Helvetica, sans-serif;
     margin: 40px 5% 0 0;
-   
 }
 nav ul {
     justify-content: space-around;
     display: flex;
     width: 100%;
+}
+
+nav a {
+    color: white;
 }
 
 @media only screen and (max-width: 780px) {
@@ -355,12 +358,26 @@ nav li {
 
 /* Contact */
 
+#contact {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+#contact-me {
+    font-size: 3rem;
+    margin: 15% 0 0;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
 #social-icons {
     position: relative;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    margin:0;
+    margin: 3rem 0 0;
     padding:0;
     display:flex;
     justify-content: center;
