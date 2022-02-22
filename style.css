@@ -144,7 +144,7 @@ nav li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     top: 0;
@@ -158,6 +158,7 @@ nav li {
     letter-spacing: .5rem;
     font-family: 'Luxurious Roman', Helvetica, sans-serif;
     margin: 23% 0;
+    position: absolute;
 }
 
 .focus-in-contract-bck {
@@ -210,6 +211,7 @@ nav li {
     border-radius: 50%;
     grid-area: 1 / 1 / 1 / 1;
     justify-self: end;
+    width: 75%;
 }
 
 #about-me-text h1 {
@@ -287,17 +289,17 @@ nav li {
 
 
 #project-SS-1 {
-    height: 25rem;
+    width: 75%;
     grid-area: 1 / 1 / 2 / 1;
     justify-self: end;
-    margin: 0 2rem;
+    padding: 0 2rem;
 }
 
 #project-SS-2 {
-    height: 25rem;
+    width: 75%;
     grid-area: 1 / 1 / 2 / 1;
     justify-self: end;
-    margin: 0 2rem;
+    padding: 0 2rem;
 }
 
 .p-1-link {
