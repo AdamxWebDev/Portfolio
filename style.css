@@ -277,14 +277,14 @@ nav li {
     font-family: 'EB Garamond', serif;
 }
 
-.projects {
-    margin: 10% 0;
-    gap: 1rem;    
+.projects {     
     font-family: 'EB Garamond', serif;
     font-size: 1.25rem;
     font-weight: 600;
     display: grid;
-    grid-template: 1fr / 2.5fr 0.5fr 1.5fr 0.5fr;    
+    grid-template: 1fr / 2.5fr 0.5fr 1.5fr 0.5fr;
+    margin: 10% 0;
+    gap: 1rem;       
 }
 
 
