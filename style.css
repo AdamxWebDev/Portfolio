@@ -15,58 +15,7 @@ body {
     line-height: 1.4;
     letter-spacing: .1rem;
 }
-
-h1 { 
-    display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-h3 { 
-    display: block;
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-h4 { 
-    display: block;
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-h5 { 
-    display: block;
-    font-size: .83em;
-    margin-top: 1.67em;
-    margin-bottom: 1.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-h6 { 
-    display: block;
-    font-size: .67em;
-    margin-top: 2.33em;
-    margin-bottom: 2.33em;
-    margin-left: 0;
-    margin-right: 0;
+h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
 }
 
@@ -78,53 +27,42 @@ a {
 
 header {
     height: 69px;
+    display: flex;
+    justify-content: end;
 }
 
 nav {
     height: 100%;
-    width: 60%;
-    float: right;
-    
+    width: 100%;    
 }
-
+nav ul {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;    
+}
 nav li {
     font-weight: 800;
     font-size: 2rem;
     font-family: 'Luxurious Roman', Helvetica, sans-serif;
     margin: 40px 5% 0 0;
 }
-nav ul {
-    justify-content: space-around;
-    display: flex;
-    width: 100%;
-}
 
 nav a {
     color: white;
 }
 
+nav a:hover {
+    color: lightblue;
+}
+
 @media only screen and (max-width: 780px) {
-
-nav {
-    width: 100%;
-    float: left;
-}
-
-nav ul {
-    justify-content: space-between;
-    padding: 0 5%;
-}
-
 nav li {
-    font-size: 1.5rem;
-    margin: 40px 5% 0 0;   
+    font-size: 1.5rem;  
 }
-
 }
 
 @media only screen and (max-width: 380px) {
     nav li {
-        font-weight: 800;
         font-size: 1rem; 
     }
 }
@@ -154,6 +92,7 @@ nav li {
 #animated-banner h1{
     text-align: center;
     font-size: 4rem;
+    text-shadow: black 0px 0 10px;
     letter-spacing: .5rem;
     font-family: 'Luxurious Roman', Helvetica, sans-serif;
     margin: 23% 0;
@@ -220,6 +159,7 @@ nav li {
 
 #about-me p {
     font-size: 1.5rem;
+    font-weight: 300;
     margin: 2rem 2rem 0;
 }
 
@@ -271,7 +211,7 @@ nav li {
 
 #projects-header {
     text-align: center;
-    margin-top: 20%;
+    padding: 20% 0 5rem;
     font-size: 3rem;
     font-family: 'EB Garamond', serif;
 }
@@ -279,39 +219,48 @@ nav li {
 .projects {     
     font-family: 'EB Garamond', serif;
     font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+
+.projects a {
+    color: white;
+    text-decoration: underline;
+}
+.projects a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+}
+.project-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-div h3 {
     font-weight: 600;
-    display: grid;
-    grid-template: 1fr / 2.5fr 0.5fr 1.5fr 0.5fr;
-    margin: 10% 0;
-    gap: 1rem;       
 }
 
-
-#project-SS-1 {
-    width: 75%;
-    grid-area: 1 / 1 / 2 / 1;
-    justify-self: end;
-    padding: 0 2rem;
+.text-div {
+    width: 35vw;
+    padding-right: 4rem;
 }
 
-#project-SS-2 {
-    width: 75%;
-    grid-area: 1 / 1 / 2 / 1;
-    justify-self: end;
-    padding: 0 2rem;
+.project_image{
+    width: 50vw;
+    padding: 0 2rem 0 4rem;
 }
 
 .p-1-link {
-    grid-area: 1 / 2 / 1 / 2;
-    position: relative;
-    top: 25%;
     font-size: 1.5rem;
 }
 
 .p-2-link {
-    grid-area: 1 / 2 / 1 / 2;
-    position: relative;
-    top: 50%;
     font-size: 1.5rem;
 }
 
