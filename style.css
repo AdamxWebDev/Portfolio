@@ -248,7 +248,8 @@ nav li {
 
 .text-div {
     width: 35vw;
-    font-size: 3vw;
+    font-size: 1.5rem;
+    padding-right: 4rem;
 }
 
 .project_image{
