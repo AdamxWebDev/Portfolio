@@ -1,10 +1,10 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/public_html/
+    - export DEPLOYPATH=/home/vyxxy8g5fbrd/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp reset.css $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
-    - export DEPLOYPATH2=/home/public_html/resources
+    - export DEPLOYPATH2=/home/vyxxy8g5fbrd/public_html/resources
     - /bin/cp -R images $DEPLOYPATH2
